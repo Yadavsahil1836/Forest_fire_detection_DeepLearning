@@ -26,7 +26,6 @@ git clone https://github.com/yadavsahil1836/Forest_fire_detection_DeepLearning.g
 In Google Colab, simply upload the notebook and run the cells.
 
 ##Required Libraries
-
 - TensorFlow
 - Keras
 - NumPy
