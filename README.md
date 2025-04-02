@@ -25,7 +25,7 @@ git clone https://github.com/yadavsahil1836/Forest_fire_detection_DeepLearning.g
 ```
 In Google Colab, simply upload the notebook and run the cells.
 
-##Required Libraries
+## Required Libraries
 - TensorFlow
 - Keras
 - NumPy
@@ -40,14 +40,14 @@ You can install all required libraries by running the following in a Colab noteb
 !pip install tensorflow keras numpy pandas opencv-python matplotlib scikit-learn
 ```
 
-##Usage
+## Usage
 
 1 . **Load the Dataset**: The first step is to load the dataset of images used for training the model. The dataset can consist of images of both forest fires and non-fire conditions.
 2 . Preprocessing the Data: Image resizing, normalization, and augmentation are performed to prepare the data for the model.
 3 . **Model Training**: The deep learning model is trained using a convolutional neural network (CNN), a popular model for image classification tasks.
 4 . **Evaluation**: The trained model is evaluated on test data to check its performance and accuracy.
 
-##Training the Model
+## Training the Model
 
 To start training the model, run the following cell:
 
@@ -56,7 +56,7 @@ To start training the model, run the following cell:
 model.fit(train_images, train_labels, epochs=10, validation_data=(val_images, val_labels))
 ```
 
-##Inference
+## Inference
 
 Once the model is trained, you can use it to predict fire conditions in new images:
 ```bash
@@ -64,10 +64,10 @@ Once the model is trained, you can use it to predict fire conditions in new imag
 predictions = model.predict(new_images)
 ```
 
-##Dataset
+## Dataset
 The dataset used in this project is a collection of satellite images or images captured from various sources that include fire and non-fire labels. These datasets are publicly available or can be collected through various platforms.
 
-##Model Architecture
+## Model Architecture
 The model implemented in this project uses a Convolutional Neural Network (CNN) to classify images into `Fire` or `No Fire` categories. The architecture consists of several layers, including convolutional layers, pooling layers, and fully connected layers. The model is trained using a binary cross-entropy loss function.
 
 ```bash
@@ -83,15 +83,15 @@ model = tf.keras.Sequential([
 ])
 ```
 
-##Results
+## Results
 The model’s performance can be evaluated using metrics like accuracy, precision, recall, and F1-score. A plot of the loss and accuracy curves during training and validation can be displayed to visualize the model's performance.
 
-##Example Results
+## Example Results
 1. **Accuracy** : 92%
 2. **Precision**: 91%
 3. **Recall**   : 93%
 
-#Contributing
+# Contributing
 If you'd like to contribute to this project, feel free to fork the repository, make changes, and submit a pull request. Please ensure you follow the code of conduct and maintain consistency in the code.
 
 
